@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>想要吃芒果</p>
+        <a>再吃一次</a>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p><em>黄</em><em>书</em><em>乐</em></p>
+      </div>
+    </section>
+  </body>
+  <script>
+    setTimeout("rotate()",5000);
+    function rotate(){
+      document.querySelectorAll('section')[0].classList.add('first');
+      document.querySelectorAll('section')[1].classList.add('last');
+    }
+    document.querySelector('section div a').onclick=function(){window.location.reload()};
+  </script>
+</html>
